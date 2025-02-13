@@ -1,0 +1,19 @@
+# projectin adin ne qoyum. Evvelki adi: SeoGram - SEO Agency Template
+# qizda demeli venv developmentin icindedi mende ise development/project_ai/venv di amma hersey qaydasindari
+# rootda pwd /root dan sonra cd ../home/ ve dalse yazilmalidi
+# men serverden elave burdada venv yaratmisdim .venv adinda serverdeki venv isi serveri gitnen bura qosannan sora .venv sildim
+# qiz serverden git pull edenden sonra mende landing_seogram artiq olur
+mende static yox idi gitpulldan geldi amma qizda landing seogram yoxdus
+#settings de gmail isleri
+
+Digital Ocean Server (git repo)
+#Initialized empty Git repository in /home/turan/development/project_ai/.git/
+
+Personal Machine(git repo)
+#Initialized empty Git repository in /Users/turan/PycharmProjects/OpenAI/.git/
+
+Git init --bare
+Initialized empty Git repository in /home/turan/development/repo/
+
+1saat 21ci deqiqede qaldin
+
