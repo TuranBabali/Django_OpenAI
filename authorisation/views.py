@@ -7,10 +7,10 @@ def login(request):
 def register(request):
 
     if request.method == 'POST':
-        username = request.POST['username']
+        email = request.POST['email']
         password = request.POST['password']
 
-        print('Username submitted was: {}'.format(username))
+
 
         return redirect('register')
 
