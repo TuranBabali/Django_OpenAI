@@ -20,7 +20,7 @@ MESSAGE_TAGS = {
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG',cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast= Csv() )
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast= Csv())
 
 
 INSTALLED_APPS = [
@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'landing',
     'authorisation',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
