@@ -3,6 +3,19 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 def login(request):
+    if request.method == 'POST':
+        email = request.POST['email'].replace(' ','').lower()
+        password = request.POST['password']
+
+        user = auth.authenticate(username=email, password=password)
+        if user:
+            auth.login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, 'Invalid credentials')
+            return redirect('register')
+
+
     return render(request, 'authorisation/login.html')
 
 
