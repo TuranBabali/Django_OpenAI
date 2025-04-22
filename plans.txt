@@ -67,5 +67,22 @@ STATICFILES_DIRS = [
 
    bu sehifenin altindaki gua muellif huquqlaridi) sildim getdi hamisin)
 
+   1saat 12ci deqiqede qaldin
+
+
+    def save(self, *args, **kwargs):
+        if self.date_created is None:
+            self.date_created = timezone.localtime(timezone.now())
+        if self.uniqueId is None:
+            self.uniqueId = str(uuid4()).split('-')[4]
+
+
+        self.slug = slugify('{} {} {}'.format(self.user.first_name, self.user.last_name,self.user.email))
+        self.last_updated = timezone.localtime(timezone.now())
+        super(Profile, self).save(*args, **kwargs)
+
+
+        yuxaridakilar nese qarisiq geldi, yada saaat uje seher 6di
+
 
  
