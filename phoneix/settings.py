@@ -30,10 +30,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Third Party APPS
+    'crispy_forms',
+    # Created APPS
     'landing',
     'authorisation',
     'dashboard',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
