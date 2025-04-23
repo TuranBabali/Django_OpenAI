@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'landing',
     'authorisation',
     'dashboard',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,7 @@ DJANGORESIZED_DEFAULT_NORMALIZE_ROTATION = True
 DJANGORESIZED_DEFAULT_FORMAT_EXTENSIONS = {'PNG': ".png"}
 
 
-
+CRISPY_TEMPLATE_PACK = "uni_form"
 
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
