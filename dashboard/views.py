@@ -32,6 +32,8 @@ def profile(request):
         if form.is_valid():
             pass
 
+
+
     return render(request,'dashboard/profile.html',context)
 
 

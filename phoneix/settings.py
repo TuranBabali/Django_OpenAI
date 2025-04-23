@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third Party APPS
     'crispy_forms',
+    'crispy_bootstrap5',
     # Created APPS
     'landing',
     'authorisation',
@@ -135,7 +136,8 @@ DJANGORESIZED_DEFAULT_NORMALIZE_ROTATION = True
 DJANGORESIZED_DEFAULT_FORMAT_EXTENSIONS = {'PNG': ".png"}
 
 
-CRISPY_TEMPLATE_PACK = "uni_form"
+CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap5"]
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
