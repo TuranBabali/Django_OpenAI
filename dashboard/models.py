@@ -8,6 +8,8 @@ from django.urls import reverse
 from uuid import uuid4
 from django_resized import ResizedImageField
 
+
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     addressLine1 = models.CharField(max_length=100, null=True, blank=True)

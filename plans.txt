@@ -85,4 +85,7 @@ STATICFILES_DIRS = [
         yuxaridakilar nese qarisiq geldi, yada saaat uje seher 6di
 
 
+ signals.py
+
+
  
